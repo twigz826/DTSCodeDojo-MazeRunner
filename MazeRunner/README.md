@@ -10,6 +10,7 @@ If you hit any walls or go outside the maze border, you should return "Dead".
 If you find yourself still in the maze after using all the moves, you should return "Lost".
 
 An example of a maze array could look like:
+
 maze = [[1,1,1,1,1,1,1],
         [1,0,0,0,0,0,3],
         [1,0,1,0,1,0,1],
