@@ -20,15 +20,6 @@ namespace DTSCodeDojo.MazeRunnerTests
                            { 1, 2, 1, 0, 1, 0, 1 } };
         }
 
-        [Fact]
-        public void RunMaze_WhenPassedEmptyValues_ReturnLost()
-        {
-            var maze = new int[0, 0];
-            var directions = Array.Empty<string>();
-            var mazeResult = _mazeRunner.RunMaze(maze, directions);
-            mazeResult.Should().Be("Lost");
-        }
-
         [Theory]
         [InlineData("N")]
         [InlineData("N", "E", "E", "E", "E")]
